@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F7F8FA"/><stop offset="100%" stop-color="#EEF1F4"/></linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="1" numOctaves="2"/><feColorMatrix type="matrix" values="0 0 0 0 0.9 0 0 0 0 0.9 0 0 0 0 0.92 0 0 0 0.04 0"/><feComposite operator="in" in2="SourceGraphic"/></filter>
+  </defs>
+  <rect width="900" height="700" fill="url(#g1)"/>
+  <rect x="100" y="100" width="700" height="500" rx="14" fill="none" stroke="#0E7490" stroke-width="2"/>
+  <ellipse cx="450" cy="350" rx="110" ry="60" fill="none" stroke="#0E7490" stroke-width="2" opacity="0.5"/>
+  <text x="450" y="360" font-family="Geist, sans-serif" font-size="20" fill="#0E7490" text-anchor="middle" font-weight="600">Contorno dos olhos</text>
+  <text x="450" y="640" font-family="Geist, sans-serif" font-size="14" fill="#57606A" text-anchor="middle">[foto real: pálpebra sem delineador permanente]</text>
+</svg>

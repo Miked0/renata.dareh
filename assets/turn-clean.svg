@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F2F4F7"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.9  0 0 0 0 0.92  0 0 0 0.05 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <path d="M 420 620 Q 960 560 1500 620 Q 1500 740 960 740 Q 420 740 420 620 Z" fill="#FFFFFF" opacity="0.9"/>
+  <path d="M 520 640 Q 960 580 1400 640 Q 1400 720 960 720 Q 520 720 520 640 Z" fill="#F8FAFC" opacity="0.85" filter="url(#grain)"/>
+  <text x="960" y="520" font-family="Geist, sans-serif" font-size="22" fill="#6E7680" text-anchor="middle">[FOTO REAL: pele regenerada, sem pigmento — mesma sobrancelha]</text>
+  <text x="960" y="880" font-family="Geist, sans-serif" font-size="18" fill="#94A3B8" text-anchor="middle">substituir pela foto "depois" da clínica · mesma moldura da imagem "antes"</text>
+</svg>

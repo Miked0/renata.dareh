@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Renata Dareh Clinic · Remoção de micropigmentação e tatuagem em São Paulo</title>
+<meta name="description" content="Remoção a laser de micropigmentação e tatuagem, correção de pigmento laranja e Nanoblading com Renata Dareh, na Consolação, São Paulo. Agende pelo WhatsApp.">
+<meta name="theme-color" content="#F4EEE6">
+<meta property="og:title" content="Renata Dareh Clinic">
+<meta property="og:description" content="Sua sobrancelha merece uma nova história. Remoção a laser e Nanoblading na Consolação, São Paulo.">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%235A0C19'/><text x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%23F4EEE6'>R</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..700&family=Instrument+Serif&family=Geist:wght@300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+  @font-face {
+    font-family: "Vicenza";
+    src: local("Vicenza"), local("Vicenza Regular"), local("Vicenza-Regular"),
+         url("assets/fonts/Vicenza.woff2") format("woff2"),
+         url("assets/fonts/Vicenza.otf") format("opentype");
+    font-display: swap;
+  }
+  /* ------------------------------------------------------------------ marca --
+     Duas famílias de chão, as mesmas do Instagram dela: papel marfim e vinho.
+     A página corta entre elas em capítulos, então o acento tem dois tons do
+     mesmo vinho: um escuro para o papel, um claro (rosado) para o vinho. */
+  :root {
+    --sc-canvas:     #F4EEE6;
+    --sc-surface:    #EBE2D6;
+    --sc-ink:        #2A0A11;
+    --sc-ink-soft:   #684649;
+    --sc-accent:     #7A1225;
+    --sc-accent-ink: #FBF5EF;
+    /* Vicenza: títulos em caixa alta condensada. Cinzel: rótulos, marca, subtítulos.
+       Vicenza é fonte comercial: o arquivo licenciado entra em assets/fonts/.
+       Até lá, a Instrument Serif (Google Fonts) segura o mesmo papel. */
+    --sc-font-display: "Vicenza", "Instrument Serif", Georgia, serif;
+    --font-caps: "Cinzel", Georgia, serif;
+    --sc-font-text:    "Geist", system-ui, sans-serif;
+    --sc-shadow-color: 350 60% 8%;
+
+    --wine-1: #5A0C19;   /* chão vinho dos capítulos */
+    --wine-2: #3D0710;   /* vinho profundo do índice */
+    --wine-3: #24040A;   /* colofão */
+    --paper:  #F4EEE6;
+    --rule-w: 1px;
+    --folio-w: clamp(3.25rem, 4.4vw, 4.5rem);
+  }
+
+  .ground--paper { --sc-canvas: var(--paper); --sc-surface: #EBE2D6; --sc-ink: #2A0A11; --sc-ink-soft: #684649; --sc-accent: #7A1225; --sc-accent-ink: #FBF5EF; background: var(--sc-canvas); color: var(--sc-ink); }
+  .ground--wine  { --sc-canvas: var(--wine-1); --sc-surface: #6A1222; --sc-ink: #F7EEE8; --sc-ink-soft: #DDBFBB; --sc-accent: #F2C6BF; --sc-accent-ink: #3A0610; background: var(--sc-canvas); color: var(--sc-ink); }
+  .ground--deep  { --sc-canvas: var(--wine-2); --sc-surface: #4E0A16; --sc-ink: #F7EEE8; --sc-ink-soft: #D6B6B2; --sc-accent: #F2C6BF; --sc-accent-ink: #3A0610; background: var(--sc-canvas); color: var(--sc-ink); }
+  .ground--night { --sc-canvas: var(--wine-3); --sc-surface: #33060F; --sc-ink: #F4EAE4; --sc-ink-soft: #C9A8A5; --sc-accent: #F2C6BF; --sc-accent-ink: #3A0610; background: var(--sc-canvas); color: var(--sc-ink); }
+  :is(.ground--wine, .ground--deep, .ground--night) ::selection { background: var(--sc-accent); color: var(--sc-accent-ink); }
+
+  body { background: var(--paper); }
+  main { position: relative; }
+  em, i { font-style: italic; }
+
+  /* ---------------------------------------------------------------- tipografia */
+  .d {
+    font-family: var(--sc-font-display);
+    font-weight: 500;
+    font-optical-sizing: auto;
+    letter-spacing: -0.012em;
+    line-height: 0.98;
+    text-wrap: balance;
+    margin: 0;
+  }
+  .d em { font-weight: 400; letter-spacing: -0.02em; }
+  .smallcaps {
+    font-family: var(--sc-font-text);
+    font-size: var(--sc-t-xs);
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .prose p { margin: 0; max-width: 60ch; color: var(--sc-ink-soft); text-wrap: pretty; }
+  .prose p + p { margin-top: var(--sc-4); }
+  .prose .lede { font-size: var(--sc-t-lg); line-height: 1.5; color: var(--sc-ink); letter-spacing: -0.01em; }
+  .ground--wine .prose p, .ground--deep .prose p { font-weight: 350; letter-spacing: 0.002em; line-height: 1.68; }
+  .ground--wine .prose .lede, .ground--deep .prose .lede { font-weight: 300; }
+
+  /* Link de texto corrido: a única forma de CTA desta gramática. */
+  .run-link {
+    color: var(--sc-ink);
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    padding-bottom: 0.08em;
+    transition: background-size 220ms var(--sc-ease-out), color 160ms var(--sc-ease-out);
+  }
+  .run-link .arr { display: inline-block; transition: transform 200ms var(--sc-ease-out); }
+  @media (hover: hover) and (pointer: fine) {
+    .run-link:hover { color: var(--sc-accent); }
+    .run-link:hover .arr { transform: translate(3px, -3px); }
+  }
+  .run-link:active .arr { transform: translate(1px, -1px); }
+
+  /* ------------------------------------------------------------------- fólio --
+     Não há barra fixa. A margem esquerda carrega o fólio, como num livro:
+     número e título do capítulo, mudando conforme a leitura avança. */
+  .folio {
+    position: fixed; left: 0; top: 0; bottom: 0; width: var(--folio-w);
+    z-index: var(--sc-z-chrome);
+    display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+    padding-block: clamp(1.25rem, 3vh, 2rem);
+    color: var(--folio-ink, #2A0A11);
+    border-right: 1px solid color-mix(in oklab, var(--folio-ink, #2A0A11) 16%, transparent);
+    transition: color 240ms var(--sc-ease-out), border-color 240ms var(--sc-ease-out);
+    pointer-events: none;
+  }
+  .folio a { pointer-events: auto; color: inherit; text-decoration: none; }
+  .folio__mark { font-family: var(--sc-font-display); font-size: 1.6rem; font-style: italic; line-height: 1; }
+  .folio__run {
+    writing-mode: vertical-rl; transform: rotate(180deg);
+    display: flex; align-items: center; gap: var(--sc-4);
+    font-size: var(--sc-t-xs); letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500;
+    white-space: nowrap;
+  }
+  .folio__num { font-family: var(--sc-font-display); font-size: 1rem; letter-spacing: 0.04em; text-transform: none; font-style: italic; }
+  .folio__title { transition: opacity 200ms var(--sc-ease-out), transform 200ms var(--sc-ease-out); }
+  .folio__title.swap { opacity: 0; transform: translateY(6px); }
+  .folio__book {
+    writing-mode: vertical-rl; transform: rotate(180deg);
+    font-size: var(--sc-t-xs); letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600;
+    padding: var(--sc-3) 0;
+  }
+  .folio__book:focus-visible { outline-offset: 4px; }
+  body[data-ground="wine"] .folio { --folio-ink: #F7EEE8; }
+  /* A margem do fólio pega o chão de cada capítulo: borda transparente sobre o fundo da seção. */
+  .page > * { border-left: var(--folio-w) solid transparent; }
+
+  @media (max-width: 760px) {
+    :root { --folio-w: 0px; }
+    .folio { display: none; }
+  }
+
+  /* -------------------------------------------------------------- folha de rosto */
+  .title-page {
+    position: relative; min-height: 100svh; overflow: hidden;
+    display: grid; grid-template-rows: auto 1fr auto;
+    padding: clamp(1.5rem, 3.5vh, 2.5rem) var(--sc-gutter) clamp(2rem, 6vh, 4rem);
+  }
+  .title-page__head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--sc-5); position: relative; z-index: 2; }
+  .wordmark { font-family: var(--sc-font-display); font-size: clamp(1.15rem, 0.9rem + 0.8vw, 1.6rem); letter-spacing: 0.01em; line-height: 1; margin: 0; }
+  .wordmark small { display: block; margin-top: 0.4em; font-family: var(--sc-font-text); font-size: 0.5em; letter-spacing: 0.32em; text-transform: uppercase; color: var(--sc-ink-soft); }
+  .title-page__body { align-self: end; position: relative; z-index: 2; max-width: 74rem; }
+  .title-page h1 { font-size: clamp(3rem, 1.4rem + 6.4vw, 8.4rem); letter-spacing: -0.028em; line-height: 0.93; }
+  .title-page h1 em { color: var(--sc-accent); }
+  .title-page h1 .ln { display: block; }
+  .title-page__foot {
+    position: relative; z-index: 2;
+    margin-top: clamp(2rem, 6vh, 4.5rem);
+    display: grid; grid-template-columns: minmax(0, 34rem) auto; justify-content: space-between; align-items: end; gap: var(--sc-6);
+    border-top: 1px solid var(--sc-hairline-strong); padding-top: var(--sc-5);
+  }
+  .title-page__foot p { margin: 0; color: var(--sc-ink-soft); max-width: 46ch; }
+  .title-page__cta { font-family: var(--sc-font-display); font-size: clamp(1.25rem, 1rem + 0.9vw, 1.9rem); font-style: italic; white-space: nowrap; }
+
+  /* Planos de profundidade da folha de rosto: monograma ao fundo, título no meio,
+     régua e fólio na frente. Profundidade por sobreposição e ritmo, sem mídia. */
+  .monogram {
+    position: absolute; z-index: 1; pointer-events: none;
+    right: -4vw; top: 50%; translate: 0 -54%;
+    font-family: var(--sc-font-display); font-style: italic; font-weight: 400;
+    font-size: clamp(24rem, 62vw, 64rem); line-height: 0.8;
+    color: color-mix(in oklab, var(--sc-accent) 9%, transparent);
+    user-select: none;
+  }
+  .monogram__line {
+    position: absolute; z-index: 1; pointer-events: none;
+    left: 58%; top: 0; bottom: 0; width: 1px;
+    background: linear-gradient(to bottom, transparent, color-mix(in oklab, var(--sc-accent) 28%, transparent) 30%, transparent);
+  }
+  .monogram, .monogram__line { max-width: none; }
+  .tp-in > * { opacity: 0; transform: translateY(14px); animation: tpIn 900ms var(--sc-ease-out) forwards; }
+  .tp-in > :nth-child(2) { animation-delay: 90ms; }
+  .tp-in > :nth-child(3) { animation-delay: 180ms; }
+  @keyframes tpIn { to { opacity: 1; transform: none; } }
+
+  @media (max-width: 760px) {
+    .title-page h1 { font-size: clamp(2.6rem, 11.5vw, 3.6rem); }
+    .title-page__foot { grid-template-columns: 1fr; }
+    .monogram { right: -22vw; top: 40%; font-size: 120vw; }
+    .monogram__line { left: 72%; }
+  }
+
+  /* --------------------------------------------------------------- capítulos */
+  .chapter { position: relative; }
+  .intertitle {
+    min-height: min(62svh, 38rem);
+    display: grid; align-content: end;
+    padding: var(--sc-10) var(--sc-gutter) clamp(3rem, 8vh, 5.5rem);
+    border-bottom: 1px solid var(--sc-hairline);
+  }
+  .intertitle__in { display: grid; grid-template-columns: auto 1fr; align-items: end; gap: clamp(1.5rem, 4vw, 4.5rem); }
+  .intertitle__num {
+    font-family: var(--sc-font-display); font-style: italic; font-weight: 400;
+    font-size: clamp(5rem, 3rem + 9vw, 12rem); line-height: 0.78; color: var(--sc-accent);
+    padding-block: 0.08em 0.02em; margin: 0;
+  }
+  .intertitle h2 { font-size: clamp(2.4rem, 1.4rem + 4vw, 5.6rem); max-width: 14ch; padding-bottom: 0.04em; }
+  .intertitle .smallcaps { color: var(--sc-ink-soft); margin-bottom: var(--sc-5); }
+
+  .spread {
+    display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: clamp(1rem, 2.4vw, 2.5rem);
+    padding: clamp(3.5rem, 8vw, 8rem) var(--sc-gutter) var(--sc-section);
+  }
+  @media (max-width: 860px) {
+    .spread { grid-template-columns: 1fr; row-gap: var(--sc-7); }
+    .spread > * { grid-column: 1 / -1 !important; }
+    .intertitle__in { grid-template-columns: 1fr; gap: var(--sc-3); }
+  }
+
+  /* Mídia sempre na própria coluna, com legenda. Nunca sob o texto. */
+  .plate { margin: 0; }
+  .plate__frame { position: relative; overflow: hidden; background: #160307; box-shadow: var(--sc-e2); }
+  .plate__frame img { width: 100%; height: 100%; object-fit: cover; max-width: none; }
+  .plate__frame .px { position: absolute; inset: -8% 0; height: 116%; }
+  .plate figcaption {
+    display: flex; gap: var(--sc-4); justify-content: space-between;
+    margin-top: var(--sc-3); font-size: var(--sc-t-xs); line-height: 1.5; color: var(--sc-ink-soft);
+    border-top: 1px solid var(--sc-hairline); padding-top: var(--sc-3);
+  }
+  .plate figcaption span:last-child { white-space: nowrap; font-style: italic; font-family: var(--sc-font-display); font-size: 0.95rem; }
+
+  /* Capítulo I */
+  .ch1 .spread__text { grid-column: 1 / span 5; align-self: start; }
+  .ch1 .spread__media { grid-column: 7 / span 6; }
+  .ch1 .plate__frame { aspect-ratio: 6 / 5; }
+  .signs { list-style: none; margin: var(--sc-7) 0 0; padding: 0; border-top: 1px solid var(--sc-hairline-strong); }
+  .signs li { display: grid; grid-template-columns: 9.5rem 1fr; gap: var(--sc-4); padding: var(--sc-4) 0; border-bottom: 1px solid var(--sc-hairline); }
+  .signs b { font-family: var(--sc-font-display); font-weight: 500; font-size: var(--sc-t-lg); line-height: 1.2; font-style: italic; }
+  .signs span { color: var(--sc-ink-soft); font-weight: 350; line-height: 1.55; }
+  @media (max-width: 520px) { .signs li { grid-template-columns: 1fr; gap: var(--sc-1); } }
+
+  /* ----------------------------------------------- Capítulo II: o laser (pico) */
+  .ch2 .spread__lede { grid-column: 1 / span 6; }
+  .ch2 .spread__aside { grid-column: 8 / span 5; align-self: end; }
+  .ch2 .lab { grid-column: 1 / -1; margin-top: clamp(3rem, 7vw, 6rem); }
+  .ch2 .after { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: inherit; margin-top: clamp(3.5rem, 7vw, 6.5rem); }
+  .ch2 .after > :nth-child(1) { grid-column: 1 / span 4; }
+  .ch2 .after > :nth-child(2) { grid-column: 6 / span 3; }
+  .ch2 .after > :nth-child(3) { grid-column: 10 / span 3; }
+  @media (max-width: 860px) { .ch2 .after { grid-template-columns: 1fr; row-gap: var(--sc-6); } .ch2 .after > * { grid-column: 1 / -1 !important; } }
+  .after h3 { font-family: var(--sc-font-display); font-weight: 500; font-size: var(--sc-t-xl); line-height: 1.08; margin: 0 0 var(--sc-3); letter-spacing: -0.01em; }
+  .after p { margin: 0; color: var(--sc-ink-soft); max-width: 40ch; }
+  .after .big { font-family: var(--sc-font-display); font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.7rem); line-height: 1.12; color: var(--sc-ink); max-width: 18ch; letter-spacing: -0.015em; }
+
+  .lab__stage {
+    position: relative; aspect-ratio: 16 / 8.2; overflow: hidden;
+    background: #0D0204; box-shadow: var(--sc-e3);
+    touch-action: pan-y; cursor: crosshair;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .lab__stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; max-width: none; }
+  .lab__stage .pulse {
+    position: absolute; width: 10px; height: 10px; margin: -5px 0 0 -5px; border-radius: 50%;
+    border: 1.5px solid #F2C6BF; pointer-events: none;
+    animation: pulse 620ms var(--sc-ease-out) forwards;
+  }
+  .lab__stage .pulse::after {
+    content: ""; position: absolute; inset: 3px; border-radius: 50%; background: #FBE7E2; opacity: 0.85;
+    animation: core 260ms var(--sc-ease-out) forwards;
+  }
+  @keyframes pulse { from { transform: scale(1); opacity: 1; } to { transform: scale(13); opacity: 0; } }
+  @keyframes core { to { opacity: 0; transform: scale(2.2); } }
+  .lab__hint {
+    position: absolute; left: clamp(1rem, 3vw, 2rem); bottom: clamp(1rem, 3vw, 2rem); z-index: 3;
+    color: #F7EEE8; font-family: var(--sc-font-display); font-style: italic; font-size: clamp(1.1rem, 0.9rem + 0.8vw, 1.6rem);
+    max-width: 22ch; line-height: 1.2; pointer-events: none;
+    transition: opacity 300ms var(--sc-ease-out), transform 300ms var(--sc-ease-out);
+  }
+  .lab__hint.gone { opacity: 0; transform: translateY(6px); }
+  .lab__scrim { position: absolute; inset: auto 0 0 0; height: 42%; z-index: 2; pointer-events: none; background: linear-gradient(to top, rgba(13,2,4,0.78), rgba(13,2,4,0)); }
+  .lab__meter {
+    position: absolute; right: clamp(1rem, 3vw, 2rem); top: clamp(1rem, 3vw, 2rem); z-index: 3;
+    color: #F7EEE8; text-align: right; pointer-events: none;
+  }
+  .lab__meter .smallcaps { color: #D9B8B3; }
+  .lab__meter output { display: block; font-family: var(--sc-font-display); font-size: clamp(2rem, 1.4rem + 2vw, 3.4rem); line-height: 1; font-variant-numeric: tabular-nums lining-nums; margin-top: var(--sc-2); }
+
+  .lab__bar {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sc-4) var(--sc-6);
+    padding-top: var(--sc-4); margin-top: var(--sc-3); border-top: 1px solid var(--sc-hairline-strong);
+  }
+  .lab__sessions { display: flex; gap: var(--sc-2); align-items: center; }
+  .lab__sessions .smallcaps { color: var(--sc-ink-soft); margin-right: var(--sc-3); }
+  .dot { width: 2.25rem; height: 2px; background: var(--sc-hairline-strong); transition: background 240ms var(--sc-ease-out); }
+  .dot.on { background: var(--sc-accent); }
+  .lab__actions { display: flex; gap: var(--sc-3); align-items: center; flex-wrap: wrap; }
+  .btn {
+    appearance: none; border: 1px solid var(--sc-ink); background: var(--sc-ink); color: var(--paper);
+    font-size: var(--sc-t-sm); letter-spacing: 0.04em; font-weight: 500;
+    padding: 0.85em 1.5em; min-height: 44px; border-radius: 0; cursor: pointer;
+    transition: background 160ms var(--sc-ease-out), color 160ms var(--sc-ease-out), transform 120ms var(--sc-ease-out), border-color 160ms var(--sc-ease-out);
+  }
+  .btn--quiet { background: transparent; color: var(--sc-ink); border-color: var(--sc-hairline-strong); }
+  @media (hover: hover) and (pointer: fine) {
+    .btn:hover { background: var(--sc-accent); border-color: var(--sc-accent); color: var(--sc-accent-ink); }
+    .btn--quiet:hover { background: transparent; color: var(--sc-accent); border-color: var(--sc-accent); }
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn:disabled, .btn:disabled:hover { opacity: 0.35; cursor: default; transform: none; background: var(--sc-ink); border-color: var(--sc-ink); color: var(--paper); }
+  .lab__note { font-size: var(--sc-t-xs); color: var(--sc-ink-soft); margin: var(--sc-3) 0 0; max-width: 70ch; }
+
+  @media (max-width: 760px) {
+    .lab__stage { aspect-ratio: 4 / 4.6; }
+    .lab__meter output { font-size: 2rem; }
+  }
+
+  /* --------------------------------------------- Capítulo III: o índice */
+  .ch3 .spread__lede { grid-column: 1 / span 5; }
+  .ch3 .spread__media { grid-column: 8 / span 5; grid-row: 1 / span 2; }
+  .ch3 .plate__frame { aspect-ratio: 4 / 5; }
+  .ch3 .index { grid-column: 1 / span 7; margin-top: var(--sc-8); }
+  .index { list-style: none; padding: 0; margin: 0; counter-reset: idx; border-top: 1px solid var(--sc-hairline-strong); }
+  .index li { border-bottom: 1px solid var(--sc-hairline-strong); }
+  .index a {
+    display: grid; grid-template-columns: 2.4rem 1fr auto; align-items: baseline; gap: var(--sc-4);
+    padding: var(--sc-5) 0; text-decoration: none; color: inherit; position: relative;
+  }
+  .index a::before {
+    counter-increment: idx; content: counter(idx, lower-roman) ".";
+    font-family: var(--sc-font-display); font-style: italic; color: var(--sc-accent); font-size: var(--sc-t-base);
+  }
+  .index h3 { font-family: var(--sc-font-display); font-weight: 500; font-size: clamp(1.5rem, 1.1rem + 1.3vw, 2.4rem); line-height: 1.05; margin: 0; letter-spacing: -0.012em; transition: transform 240ms var(--sc-ease-out); }
+  .index p { grid-column: 2 / 3; margin: var(--sc-2) 0 0; color: var(--sc-ink-soft); font-weight: 350; max-width: 46ch; line-height: 1.55; }
+  .index .go { grid-row: 1; grid-column: 3; font-size: var(--sc-t-xs); letter-spacing: 0.18em; text-transform: uppercase; color: var(--sc-ink-soft); white-space: nowrap; transition: color 160ms var(--sc-ease-out), transform 200ms var(--sc-ease-out); }
+  .index a::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: var(--sc-accent);
+    transform: scaleX(0); transform-origin: left; transition: transform 380ms var(--sc-ease-out);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .index a:hover h3 { transform: translateX(6px); }
+    .index a:hover .go { color: var(--sc-accent); transform: translateX(-2px); }
+    .index a:hover::after { transform: scaleX(1); }
+  }
+  .index a:active h3 { transform: translateX(3px); }
+  @media (max-width: 520px) { .index .go { display: none; } .index a { grid-template-columns: 2rem 1fr; } }
+
+  /* --------------------------------------------- Capítulo IV: quem conduz */
+  .ch4 .quote { grid-column: 1 / span 8; }
+  .ch4 .quote blockquote { margin: 0; }
+  .ch4 .quote p { font-family: var(--sc-font-display); font-weight: 400; font-size: clamp(2.2rem, 1.2rem + 4.2vw, 5.6rem); line-height: 1; letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+  .ch4 .quote p em { color: var(--sc-accent); }
+  .ch4 .quote cite { display: block; margin-top: var(--sc-5); font-style: normal; }
+  .ch4 .bio { grid-column: 1 / span 5; margin-top: var(--sc-9); }
+  .ch4 .facts { grid-column: 7 / span 6; margin-top: var(--sc-9); align-self: start; }
+  .facts dl { margin: 0; display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--sc-hairline-strong); }
+  .facts div { padding: var(--sc-5) var(--sc-4) var(--sc-5) 0; border-bottom: 1px solid var(--sc-hairline); }
+  .facts div:nth-child(odd) { border-right: 1px solid var(--sc-hairline); }
+  .facts div:nth-child(even) { padding-left: var(--sc-5); }
+  .facts dt { font-size: var(--sc-t-xs); letter-spacing: 0.2em; text-transform: uppercase; color: var(--sc-ink-soft); font-weight: 500; }
+  .facts dd { margin: var(--sc-2) 0 0; font-family: var(--sc-font-display); font-size: var(--sc-t-xl); line-height: 1.1; }
+  .facts dd small { display: block; font-family: var(--sc-font-text); font-size: var(--sc-t-sm); color: var(--sc-ink-soft); margin-top: var(--sc-2); line-height: 1.45; }
+  .course {
+    grid-column: 7 / span 6; margin-top: var(--sc-7);
+    padding: var(--sc-6); background: var(--wine-1); color: #F7EEE8; box-shadow: var(--sc-e2);
+    display: grid; gap: var(--sc-3);
+  }
+  .course .smallcaps { color: #DDBFBB; }
+  .course p { margin: 0; color: #DDBFBB; font-weight: 350; max-width: 44ch; }
+  .course h3 { font-family: var(--sc-font-display); font-size: var(--sc-t-2xl); font-weight: 500; line-height: 1; margin: 0; letter-spacing: -0.01em; }
+  .course a { color: #F7EEE8; }
+
+  /* --------------------------------------------------------------- colofão */
+  .colophon { min-height: 100svh; display: grid; grid-template-rows: 1fr auto; padding: var(--sc-10) var(--sc-gutter) clamp(1.5rem, 4vh, 2.5rem); }
+  .colophon__ask { align-self: center; max-width: 64rem; }
+  .colophon__ask .smallcaps { color: var(--sc-ink-soft); margin-bottom: var(--sc-6); }
+  .colophon__ask p.d { font-size: clamp(2.2rem, 1.2rem + 4vw, 5.4rem); line-height: 1.02; letter-spacing: -0.022em; }
+  .colophon__ask p.d a { color: var(--sc-accent); }
+  .masthead {
+    display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: var(--sc-6);
+    border-top: 1px solid var(--sc-hairline-strong); padding-top: var(--sc-6); margin-top: var(--sc-9);
+    font-size: var(--sc-t-sm); line-height: 1.6;
+  }
+  .masthead h4 { margin: 0 0 var(--sc-2); font-size: var(--sc-t-xs); letter-spacing: 0.22em; text-transform: uppercase; color: var(--sc-ink-soft); font-weight: 500; }
+  .masthead p { margin: 0; color: var(--sc-ink); font-weight: 350; }
+  .masthead a { color: var(--sc-ink); }
+  .masthead .wm { font-family: var(--sc-font-display); font-size: var(--sc-t-xl); line-height: 1; }
+  .imprint { display: flex; justify-content: space-between; gap: var(--sc-5); flex-wrap: wrap; margin-top: var(--sc-7); font-size: var(--sc-t-xs); color: var(--sc-ink-soft); letter-spacing: 0.04em; }
+  @media (max-width: 860px) { .masthead { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .masthead { grid-template-columns: 1fr; } }
+
+  /* ============================================================== foto desfocada --
+     Pano de fundo em bokeh: manchas de luz suave e desfocada atrás de tudo,
+     nunca em cima de foto de pele. A hero e o colofão recebem essa camada; o
+     resto da página fica nos fundos sólidos (papel/vinho). Sem frisos, sem
+     relevo, sem vidro — adequado a clínica de estética. */
+
+  .bg--blur {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none;
+    overflow: hidden;
+  }
+  .bg--blur::before {
+    content: ""; position: absolute; inset: -20% -10%;
+    background:
+      radial-gradient(55% 50% at 30% 30%, rgba(122, 18, 37, 0.35), transparent 60%),
+      radial-gradient(45% 40% at 80% 70%, rgba(242, 198, 191, 0.45), transparent 60%),
+      radial-gradient(60% 55% at 50% 10%, rgba(244, 238, 230, 0.30), transparent 55%);
+    filter: blur(40px);
+    will-change: transform;
+    animation: blurDrift 24s ease-in-out infinite alternate;
+  }
+  .bg--blur--hero { z-index: 0; }
+  .bg--blur--close { z-index: 0; }
+
+  @keyframes blurDrift {
+    from { transform: translate3d(-4%, -3%, 0) scale(1); }
+    to   { transform: translate3d(5%, 4%, 0) scale(1.06); }
+  }
+
+  /* Luz suave por trás da hero: sem vidro, só a mancha de cor atrás do R e do título. */
+  .lights--hero { overflow: visible; }
+
+  /* Estrutura do colofão: o bloco de vidro/desfoque fica atrás de tudo,
+     o conteúdo (pedido de agendamento) fica na frente. */
+  .colophon { position: relative; overflow: hidden; }
+  .colophon > :not(.colophon__glass) { position: relative; z-index: 2; }
+  .colophon__glass { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+
+  /* ===================================================== tipografia: Vicenza + Cinzel --
+     Nenhuma das duas tem itálico, então a ênfase passa a ser cor, não inclinação.
+     Vicenza (display): caixa alta condensada, entrelinha fechada, tracking leve
+     positivo porque caixa alta apertada embola. Cinzel: tudo que é rótulo, marca e
+     subtítulo. Geist segue no texto corrido, que nenhuma das duas sustenta. */
+  em, i { font-style: normal; }
+  .d, .intertitle__num, .ch4 .quote p, .after .big, .course h3, .lab__meter output, .colophon__ask p.d {
+    font-family: var(--sc-font-display); font-weight: 400; text-transform: uppercase;
+    letter-spacing: 0.012em; font-style: normal;
+  }
+  /* Caixa alta acentuada (Ó, Ã, Ç) precisa de ar acima: entrelinha menor que 0.95 faz o acento bater na linha de cima. */
+  .d { line-height: 0.96; }
+  .d em, .ch4 .quote p em { font-style: normal; font-weight: 400; letter-spacing: inherit; color: var(--sc-accent); }
+  .title-page h1 { font-size: clamp(3.2rem, 1.2rem + 6.6vw, 8.6rem); letter-spacing: 0.006em; line-height: 0.96; }
+  .intertitle h2 { font-size: clamp(2.8rem, 1.4rem + 4.8vw, 6.6rem); max-width: 12ch; }
+  .intertitle__num { font-size: clamp(6rem, 3rem + 10vw, 13rem); line-height: 0.8; letter-spacing: 0.02em; }
+  .ch4 .quote p { font-size: clamp(2.6rem, 1.2rem + 5vw, 6.6rem); line-height: 0.98; }
+  .after .big { font-size: clamp(2rem, 1.3rem + 2vw, 3.2rem); line-height: 0.98; max-width: 14ch; }
+  .colophon__ask p.d { font-size: clamp(2.6rem, 1.2rem + 4.8vw, 6.4rem); line-height: 0.98; }
+  .colophon__ask p.d a { display: inline-block; margin-top: 0.12em; }
+  .course h3 { font-size: clamp(2.4rem, 1.6rem + 2.4vw, 3.6rem); line-height: 0.92; }
+  .lab__meter output { letter-spacing: 0.02em; }
+
+  .wordmark, .folio__mark, .folio__num, .monogram, .signs b, .after h3, .index h3, .index a::before,
+  .facts dd, .masthead .wm, .title-page__cta, .lab__hint, .plate figcaption span:last-child {
+    font-family: var(--font-caps); font-style: normal;
+  }
+  .wordmark { font-weight: 500; letter-spacing: 0.08em; font-size: clamp(1.1rem, 0.9rem + 0.6vw, 1.45rem); }
+  .wordmark small { letter-spacing: 0.34em; }
+  .folio__mark { font-size: 1.35rem; font-weight: 600; }
+  .folio__num { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.12em; }
+  .monogram { font-weight: 400; line-height: 0.82; }
+  .smallcaps { font-family: var(--font-caps); font-weight: 600; letter-spacing: 0.2em; font-size: clamp(0.72rem, 0.68rem + 0.15vw, 0.8rem); }
+  .signs b { font-size: var(--sc-t-base); font-weight: 600; letter-spacing: 0.06em; }
+  .after h3 { font-size: var(--sc-t-lg); font-weight: 600; letter-spacing: 0.04em; }
+  .index h3 { font-size: clamp(1.2rem, 0.95rem + 0.9vw, 1.8rem); font-weight: 500; letter-spacing: 0.03em; line-height: 1.15; }
+  .index a::before { font-weight: 600; font-size: var(--sc-t-sm); }
+  .facts dd { font-size: var(--sc-t-lg); font-weight: 500; letter-spacing: 0.03em; line-height: 1.15; }
+  .masthead .wm { font-size: var(--sc-t-lg); font-weight: 600; letter-spacing: 0.06em; }
+  .title-page__cta { font-size: clamp(1rem, 0.85rem + 0.55vw, 1.35rem); font-weight: 600; letter-spacing: 0.08em; }
+  .lab__hint { font-size: clamp(0.95rem, 0.8rem + 0.5vw, 1.25rem); font-weight: 600; letter-spacing: 0.04em; line-height: 1.3; }
+  .plate figcaption span:last-child { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; }
+  @media (max-width: 760px) {
+    .title-page h1 { font-size: clamp(2.7rem, 13vw, 4rem); }
+  }
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .flute { background-color: rgba(244, 238, 230, 0.55); }
+    .flute--dark, .colophon__glass .flute { background-color: rgba(40, 4, 10, 0.55); }
+  }
+
+  /* ================================================================ vida nos fundos --
+     O chão deixa de ser uma cor chapada e vira uma superfície iluminada: duas
+     camadas de luz macia por seção, derivando devagar em sentidos opostos, mais
+     uma luz que acompanha o ponteiro nos capítulos vinho. Tudo abaixo do
+     conteúdo (z -1 dentro de um contexto isolado), só transform e opacity. */
+  .title-page, .chapter, .colophon { isolation: isolate; overflow: clip; }
+  .title-page::before, .chapter::before, .colophon::before,
+  .title-page::after,  .chapter::after,  .colophon::after {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    inset: -20% -10%;
+    will-change: transform;
+  }
+  /* papel: luz quente de janela + um véu rosado */
+  .ground--paper::before {
+    background:
+      radial-gradient(42% 36% at 12% 14%, rgba(255, 255, 255, 0.85), transparent 70%),
+      radial-gradient(38% 34% at 88% 30%, rgba(236, 190, 182, 0.50), transparent 72%),
+      radial-gradient(46% 40% at 30% 92%, rgba(122, 18, 37, 0.10), transparent 70%);
+    animation: driftA 26s ease-in-out infinite alternate;
+  }
+  .ground--paper::after {
+    background:
+      radial-gradient(30% 28% at 70% 78%, rgba(255, 244, 236, 0.9), transparent 70%),
+      radial-gradient(34% 30% at 52% 8%, rgba(214, 160, 150, 0.28), transparent 72%);
+    animation: driftB 34s ease-in-out infinite alternate;
+  }
+  /* vinho: veludo iluminado, um foco mais claro e um canto que cai para a sombra */
+  :is(.ground--wine, .ground--deep, .ground--night)::before {
+    background:
+      radial-gradient(44% 40% at 84% 12%, rgba(190, 52, 74, 0.55), transparent 70%),
+      radial-gradient(50% 44% at 6% 96%, rgba(16, 0, 4, 0.60), transparent 72%),
+      radial-gradient(36% 32% at 38% 44%, rgba(242, 150, 140, 0.10), transparent 70%);
+    animation: driftA 30s ease-in-out infinite alternate;
+  }
+  :is(.ground--wine, .ground--deep, .ground--night)::after {
+    inset: 0;
+    background:
+      radial-gradient(34rem 34rem at var(--lx, 70%) var(--ly, 30%), rgba(255, 190, 180, 0.13), transparent 70%),
+      radial-gradient(60% 50% at 20% 20%, rgba(150, 30, 52, 0.30), transparent 72%);
+  }
+  .ground--night::before { opacity: 0.8; }
+  @keyframes driftA { from { transform: translate3d(-3%, -2%, 0) scale(1); } to { transform: translate3d(4%, 3%, 0) scale(1.08); } }
+  @keyframes driftB { from { transform: translate3d(3%, 2%, 0) scale(1.06); } to { transform: translate3d(-4%, -3%, 0) scale(1); } }
+  .sc-grain { opacity: 0.07; }
+  .intertitle { border-bottom-color: var(--sc-hairline-strong); }
+
+  /* Luzes atrás do vidro: é o que o canelado refrata. Derivam mais rápido que o chão. */
+  .lights { position: absolute; z-index: 0; pointer-events: none; }
+  .lights i { position: absolute; border-radius: 50%; filter: blur(6px); will-change: transform; }
+  .lights { overflow: hidden; }   /* a luz fica presa ao retângulo do vidro, sem vazar na página */
+  .lights--hero { left: 52%; right: 0; top: 6%; bottom: 13%; }
+  .lights--hero i:nth-child(1) { width: 62%; aspect-ratio: 1; left: 4%; top: 6%; background: radial-gradient(closest-side, rgba(122, 18, 37, 0.62), rgba(122, 18, 37, 0.18) 60%, transparent); animation: orbA 17s ease-in-out infinite alternate; }
+  .lights--hero i:nth-child(2) { width: 54%; aspect-ratio: 1; right: 0; bottom: 4%; background: radial-gradient(closest-side, rgba(226, 150, 140, 0.85), rgba(226, 150, 140, 0.25) 60%, transparent); animation: orbB 21s ease-in-out infinite alternate; }
+  .lights--hero i:nth-child(3) { width: 36%; aspect-ratio: 1; right: 18%; top: 2%; background: radial-gradient(closest-side, rgba(255, 255, 255, 0.95), transparent); animation: orbC 14s ease-in-out infinite alternate; }
+  .lights--close { left: 56%; right: 0; top: 0; bottom: 0; }
+  .lights--close i:nth-child(1) { width: 60%; aspect-ratio: 1; left: 6%; top: 10%; background: radial-gradient(closest-side, rgba(206, 60, 84, 0.75), rgba(206, 60, 84, 0.2) 60%, transparent); animation: orbA 19s ease-in-out infinite alternate; }
+  .lights--close i:nth-child(2) { width: 50%; aspect-ratio: 1; right: 2%; bottom: 8%; background: radial-gradient(closest-side, rgba(242, 170, 160, 0.5), transparent); animation: orbB 23s ease-in-out infinite alternate; }
+  .lights--close i:nth-child(3) { width: 34%; aspect-ratio: 1; right: 24%; top: 0; background: radial-gradient(closest-side, rgba(10, 0, 3, 0.8), transparent); animation: orbC 16s ease-in-out infinite alternate; }
+  @keyframes orbA { from { transform: translate3d(-6%, -4%, 0) scale(0.94); } to { transform: translate3d(16%, 14%, 0) scale(1.12); } }
+  @keyframes orbB { from { transform: translate3d(6%, 8%, 0) scale(1.08); } to { transform: translate3d(-20%, -16%, 0) scale(0.92); } }
+  @keyframes orbC { from { transform: translate3d(10%, 0, 0); } to { transform: translate3d(-24%, 30%, 0); } }
+
+  /* O R: agora na frente do vidro, nítido, com sombra própria sobre o painel. */
+  .mark-r { position: absolute; pointer-events: none; display: grid; place-items: center; }
+  .mark-r span {
+    display: block; font-family: var(--font-caps); font-weight: 500; line-height: 0.8;
+    font-size: min(58vh, 33vw); padding-top: 0.06em;
+    color: var(--sc-accent);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35), 0 18px 34px rgba(60, 6, 16, 0.22);
+    user-select: none;
+  }
+  .mark-r--hero { z-index: 1; left: 52%; right: 0; top: 6%; bottom: 13%; }
+  .flute--hero { z-index: 1; --flute-blur: 22px; --flute-tint: rgba(255, 250, 246, 0.16); }
+  .title-page__head, .title-page__body, .title-page__foot { z-index: 3; }
+  /* No colofão o R fica no terço direito do vidro, longe do pedido de agendamento. */
+  .mark-r--close { z-index: 1; left: 73%; right: 0; top: 0; bottom: 22%; }
+  .mark-r--close span { font-size: min(44vh, 22vw); }
+  .mark-r--close span { color: rgba(242, 198, 191, 0.92); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.12), 0 22px 40px rgba(0, 0, 0, 0.45); }
+  .colophon__glass .flute { --flute-blur: 24px; }
+  @media (max-width: 760px) {
+    .lights--hero { left: 44%; top: 9%; bottom: 46%; }
+    .mark-r--close span { font-size: 5.5rem; }
+    .mark-r--hero { left: 44%; top: 9%; bottom: 46%; }
+    .mark-r span { font-size: min(34vh, 46vw); }
+    /* No celular o vidro vira uma faixa no topo do colofão, com o R dentro, acima do texto. */
+    .mark-r--close { left: auto; right: var(--sc-gutter); top: 0; bottom: auto; height: 8.5rem; }
+    .colophon__glass .flute { left: 0; top: 0; bottom: auto; height: 8.5rem; }
+    .colophon { padding-top: 11.5rem; }
+    .lights--close { left: 0; bottom: auto; height: 8.5rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tp-in > * { animation: none; opacity: 1; transform: none; }
+    .lab__stage .pulse { display: none; }
+    .title-page::before, .chapter::before, .colophon::before,
+    .title-page::after, .chapter::after, .colophon::after, .lights i { animation: none; }
+  }
+</style>
+</head>
+<body data-ground="paper">
+
+<div class="sc-grain" aria-hidden="true"></div>
+
+<!-- Fólio: a navegação desta gramática. Margem esquerda, como num livro. -->
+<aside class="folio" aria-label="Capítulo atual">
+  <a class="folio__mark" href="#rosto" aria-label="Voltar ao início">R</a>
+  <div class="folio__run" aria-live="polite">
+    <span class="folio__num" id="folio-num">Rosto</span>
+    <span class="folio__title" id="folio-title">Renata Dareh Clinic</span>
+  </div>
+  <a class="folio__book" href="#agendar">Agendar</a>
+</aside>
+
+<main class="page">
+
+  <!-- FOLHA DE ROSTO: tipo sobre papel. A mídia começa no capítulo I. -->
+  <header id="rosto" class="title-page ground--paper" data-sc-act="flow" data-chapter="Rosto|Renata Dareh Clinic" data-ground="paper">
+    <!-- Planos, de trás para a frente: luzes que derivam, vidro canelado, o R nítido, o título. -->
+    <div class="lights lights--hero" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="bg--blur bg--blur--hero" aria-hidden="true"></div>
+    <div class="mark-r mark-r--hero" aria-hidden="true"><span data-sc-parallax="-0.8">R</span></div>
+
+    <div class="title-page__head">
+      <p class="wordmark">Renata Dareh<small>Clinic · São Paulo</small></p>
+    </div>
+
+    <div class="title-page__body tp-in">
+      <h1 class="d"><span class="ln">Sua sobrancelha</span> <span class="ln">merece uma</span> <span class="ln"><em>nova história.</em></span></h1>
+    </div>
+
+    <div class="title-page__foot tp-in">
+      <p>Remoção a laser de micropigmentação e tatuagem, e Nanoblading fio a fio. Na Consolação, em São Paulo.</p>
+      <a class="run-link title-page__cta" href="https://wa.me/5511930397521?text=Ol%C3%A1%2C%20Renata.%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp <span class="arr" aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <!-- CAPÍTULO I · Reconhecimento -->
+  <section id="cap-1" class="chapter ch1 ground--wine" data-sc-act="flow" data-chapter="I|O pigmento que ficou" data-ground="wine" aria-labelledby="t1">
+    <div class="intertitle">
+      <div data-sc-reveal="up" data-sc-reveal-at="0.02 0.22">
+        <p class="smallcaps">Capítulo um</p>
+        <div class="intertitle__in">
+          <p class="intertitle__num" aria-hidden="true">I</p>
+          <h2 id="t1" class="d">O pigmento que <em>ficou.</em></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="spread">
+      <div class="spread__text prose" data-sc-in data-sc-stagger="70">
+        <p class="lede">Ela foi feita para facilitar a rotina. Com os anos, o desenho que era seu passou a parecer de outra pessoa.</p>
+        <p>O tom esfriou, o traço engrossou, o formato deixou de combinar com o rosto. E toda manhã começa disfarçando o que deveria estar a seu favor.</p>
+        <p>Corrigir por cima costuma esconder o problema por um tempo e somar camadas. Remover devolve a pele ao ponto de partida, para que você decida, com calma, o que vem depois.</p>
+        <ul class="signs" aria-label="Sinais de que a micropigmentação pede remoção">
+          <li><b>Azulado</b><span>O pigmento escuro esfriou e aparece acinzentado sob a pele.</span></li>
+          <li><b>Alaranjado</b><span>Sobra de uma remoção anterior ou de um pigmento que oxidou.</span></li>
+          <li><b>Duro</b><span>Contorno marcado, sem fio, que não acompanha o seu rosto hoje.</span></li>
+          <li><b>Assimétrico</b><span>Um lado diferente do outro, que nenhuma maquiagem resolve.</span></li>
+        </ul>
+      </div>
+
+      <figure class="plate spread__media" data-sc-in>
+        <div class="plate__frame">
+          <img class="px" src="assets/brow-before-crop.webp" width="1200" height="800" alt="Sobrancelha com micropigmentação antiga, o pigmento já acinzentado e azulado sob os fios" loading="lazy" data-sc-parallax="-0.9">
+        </div>
+        <figcaption><span>Micropigmentação antiga: o tom migra para o azul e o cinza.</span><span>Imagem ilustrativa</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CAPÍTULO II · A virada (o pico da página) -->
+  <section id="cap-2" class="chapter ch2 ground--paper" data-sc-act="flow" data-chapter="II|Sessão a sessão" data-ground="paper" aria-labelledby="t2">
+    <div class="intertitle">
+      <div data-sc-reveal="up" data-sc-reveal-at="0.02 0.18">
+        <p class="smallcaps">Capítulo dois</p>
+        <div class="intertitle__in">
+          <p class="intertitle__num" aria-hidden="true">II</p>
+          <h2 id="t2" class="d">A pele volta, <em>sessão a sessão.</em></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="spread">
+      <div class="spread__lede prose" data-sc-in data-sc-stagger="70">
+        <p class="lede">O laser não cobre e não clareia. Ele quebra o pigmento em partículas tão pequenas que o próprio corpo consegue eliminar.</p>
+        <p>Por isso o resultado chega aos poucos. Entre uma sessão e outra a pele descansa e o organismo faz a parte dele. O número de sessões depende do pigmento, da profundidade e da sua pele, e é definido na avaliação.</p>
+      </div>
+      <div class="spread__aside prose" data-sc-in>
+        <p>Experimente abaixo. Toque na sobrancelha para disparar o laser, ou avance uma sessão de cada vez.</p>
+      </div>
+
+      <!-- ASSINATURA: o laser. Cada toque dispara um pulso que limpa a pele naquele
+           ponto e a limpeza fica. JS próprio desta página, o motor não é tocado. -->
+      <div class="lab" data-sc-in>
+        <div class="lab__stage" id="lab" role="img" aria-label="Simulação: sobrancelha com micropigmentação. Cada disparo do laser remove parte do pigmento.">
+          <canvas id="lab-canvas"></canvas>
+          <div class="lab__scrim" aria-hidden="true"></div>
+          <p class="lab__hint" id="lab-hint" aria-hidden="true">Toque na sobrancelha para disparar o laser.</p>
+          <div class="lab__meter" aria-hidden="true">
+            <p class="smallcaps">Pigmento removido</p>
+            <output id="lab-pct">0%</output>
+          </div>
+        </div>
+        <div class="lab__bar">
+          <div class="lab__sessions">
+            <p class="smallcaps" id="lab-label">Sessão 0 de 4</p>
+            <span class="dot" aria-hidden="true"></span><span class="dot" aria-hidden="true"></span><span class="dot" aria-hidden="true"></span><span class="dot" aria-hidden="true"></span>
+          </div>
+          <div class="lab__actions">
+            <button class="btn" type="button" id="lab-next">Avançar uma sessão</button>
+            <button class="btn btn--quiet" type="button" id="lab-reset">Recomeçar</button>
+          </div>
+        </div>
+        <p class="lab__note" id="lab-live" aria-live="polite">Simulação ilustrativa. O número de sessões e o resultado variam de pessoa para pessoa e são avaliados pessoalmente.</p>
+      </div>
+
+      <div class="after" data-sc-in data-sc-stagger="80">
+        <p class="big">Sem tinta por cima. Sem desenho novo escondendo o antigo.</p>
+        <div>
+          <h3>Na avaliação</h3>
+          <p>Renata olha o pigmento, a profundidade e a sua pele, e explica com franqueza quantas sessões fazem sentido e o que esperar de cada uma.</p>
+        </div>
+        <div>
+          <h3>Depois</h3>
+          <p>Com a pele livre, você escolhe: deixar o fio natural ou refazer o desenho com Nanoblading, agora do jeito que combina com você.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPÍTULO III · O que tratamos -->
+  <section id="cap-3" class="chapter ch3 ground--deep" data-sc-act="flow" data-chapter="III|O que tratamos" data-ground="wine" aria-labelledby="t3">
+    <div class="intertitle">
+      <div data-sc-reveal="up" data-sc-reveal-at="0.02 0.2">
+        <p class="smallcaps">Capítulo três</p>
+        <div class="intertitle__in">
+          <p class="intertitle__num" aria-hidden="true">III</p>
+          <h2 id="t3" class="d">O que <em>tratamos.</em></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="spread">
+      <div class="spread__lede prose" data-sc-in>
+        <p class="lede">Cada área pede um protocolo. Escolha o seu e fale direto com a Renata.</p>
+      </div>
+
+      <figure class="plate spread__media" data-sc-in>
+        <div class="plate__frame">
+          <img class="px" src="assets/brow-macro-tall.webp" width="900" height="1186" alt="Sobrancelha natural em close, fios visíveis sobre a pele limpa" loading="lazy" data-sc-parallax="-1.1">
+        </div>
+        <figcaption><span>O objetivo é sempre o fio natural, sobre pele limpa.</span><span>Imagem ilustrativa</span></figcaption>
+      </figure>
+
+      <ol class="index" data-sc-in data-sc-stagger="60">
+        <li><a href="https://wa.me/5511930397521?text=Ol%C3%A1%2C%20Renata.%20Quero%20saber%20sobre%20remo%C3%A7%C3%A3o%20de%20micropigmenta%C3%A7%C3%A3o." target="_blank" rel="noopener">
+          <h3>Remoção de micropigmentação</h3><span class="go">Perguntar ↗</span>
+          <p>Sobrancelhas, lábios e contorno dos olhos.</p></a></li>
+        <li><a href="https://wa.me/5511930397521?text=Ol%C3%A1%2C%20Renata.%20Quero%20saber%20sobre%20remo%C3%A7%C3%A3o%20de%20tatuagem." target="_blank" rel="noopener">
+          <h3>Remoção de tatuagem</h3><span class="go">Perguntar ↗</span>
+          <p>Do traço fino ao preenchimento, em diferentes regiões do corpo.</p></a></li>
+        <li><a href="https://wa.me/5511930397521?text=Ol%C3%A1%2C%20Renata.%20Meu%20pigmento%20ficou%20alaranjado%20e%20quero%20corrigir." target="_blank" rel="noopener">
+          <h3>Correção do pigmento laranja</h3><span class="go">Perguntar ↗</span>
+          <p>Quando o tom alaranjado ficou depois de uma remoção ou de um pigmento que oxidou.</p></a></li>
+        <li><a href="https://wa.me/5511930397521?text=Ol%C3%A1%2C%20Renata.%20Quero%20saber%20sobre%20Nanoblading." target="_blank" rel="noopener">
+          <h3>Nanoblading</h3><span class="go">Perguntar ↗</span>
+          <p>Fios desenhados um a um, para uma sobrancelha natural depois da remoção.</p></a></li>
+        <li><a href="https://wa.me/5511930397521?text=Ol%C3%A1%2C%20Renata.%20Quero%20saber%20sobre%20o%20laser%20CO2%20fracionado." target="_blank" rel="noopener">
+          <h3>Laser CO2 fracionado</h3><span class="go">Perguntar ↗</span>
+          <p>Renovação da textura da pele.</p></a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CAPÍTULO IV · Quem conduz -->
+  <section id="cap-4" class="chapter ch4 ground--paper" data-sc-act="flow" data-chapter="IV|Quem conduz" data-ground="paper" aria-labelledby="t4">
+    <div class="intertitle">
+      <div data-sc-reveal="up" data-sc-reveal-at="0.02 0.2">
+        <p class="smallcaps">Capítulo quatro</p>
+        <div class="intertitle__in">
+          <p class="intertitle__num" aria-hidden="true">IV</p>
+          <h2 id="t4" class="d">Quem <em>conduz.</em></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="spread">
+      <figure class="quote" data-sc-in>
+        <blockquote><p>Naturalidade, <em>precisão</em> e sofisticação.</p></blockquote>
+        <figcaption><cite class="smallcaps">Renata Dareh</cite></figcaption>
+      </figure>
+
+      <div class="bio prose" data-sc-in data-sc-stagger="70">
+        <p class="lede">Renata Dareh dedica a clínica a um trabalho que pede mais paciência do que pressa: tirar da pele o que não deveria mais estar lá.</p>
+        <p>Especialista em remoção de pigmento, ela atende na Consolação, em São Paulo, e acompanha cada caso do primeiro disparo até a pele estar pronta para uma nova história.</p>
+      </div>
+
+      <div class="facts" data-sc-in>
+        <dl>
+          <div><dt>Google</dt><dd>5,0<small>Nota média em 11 avaliações. <a class="run-link" href="https://www.google.com/maps/search/?api=1&amp;query=Clinica%20Renata%20Dareh%20Frei%20Caneca%201212" target="_blank" rel="noopener">Ler no Google ↗</a></small></dd></div>
+          <div><dt>Especialidade</dt><dd>Remoção<small>De micropigmentação e tatuagem, a laser.</small></dd></div>
+          <div><dt>Onde</dt><dd>Consolação<small>R. Frei Caneca, 1212, conj. 87.</small></dd></div>
+          <div><dt>Instagram</dt><dd>Perfil verificado<small><a class="run-link" href="https://www.instagram.com/renatadareh.clinic/" target="_blank" rel="noopener">@renatadareh.clinic ↗</a></small></dd></div>
+        </dl>
+      </div>
+
+      <aside class="course" data-sc-in aria-labelledby="t-course">
+        <p class="smallcaps">Para profissionais · Em breve</p>
+        <h3 id="t-course">Dareh Remuve</h3>
+        <p>O curso de remoção da Renata, para quem quer levar a técnica para a própria carreira. <a class="run-link" href="https://www.instagram.com/renatadareh.clinic/" target="_blank" rel="noopener">Acompanhe no Instagram ↗</a></p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- COLOFÃO · Compromisso. A página para e assina. -->
+  <footer id="agendar" class="colophon ground--night" data-sc-act="flow" data-chapter="Colofão|Agendar" data-ground="wine">
+    <div class="colophon__glass" aria-hidden="true">
+      <div class="lights lights--close"><i></i><i></i><i></i></div>
+      <div class="bg--blur bg--blur--close"></div>
+      <div class="mark-r mark-r--close"><span data-sc-parallax="-0.8">R</span></div>
+    </div>
+    <div class="colophon__ask" data-sc-in data-sc-stagger="80">
+      <p class="smallcaps">Para começar</p>
+      <p class="d">Conte para a Renata o que você quer apagar. <a class="run-link" href="https://wa.me/5511930397521?text=Ol%C3%A1%2C%20Renata.%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><em>Agendar pelo WhatsApp</em> <span class="arr" aria-hidden="true">↗</span></a></p>
+    </div>
+
+    <div>
+      <div class="masthead">
+        <div><p class="wm">Renata Dareh</p><p style="color: var(--sc-ink-soft); margin-top: var(--sc-2);">Remoção a laser e Nanoblading</p></div>
+        <div><h4>Endereço</h4><p><a href="https://www.google.com/maps/search/?api=1&amp;query=R.%20Frei%20Caneca%2C%201212%2C%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">R. Frei Caneca, 1212, conj. 87<br>Consolação, São Paulo, SP<br>01307-002</a></p></div>
+        <div><h4>Contato</h4><p><a href="tel:+5511930397521">(11) 93039-7521</a><br><a href="https://wa.me/5511930397521" target="_blank" rel="noopener">WhatsApp</a></p></div>
+        <div><h4>Atendimento</h4><p>Com hora marcada.<br><a href="https://www.instagram.com/renatadareh.clinic/" target="_blank" rel="noopener">Instagram</a></p></div>
+      </div>
+      <div class="imprint">
+        <span>© 2026 Renata Dareh Clinic</span>
+        <span>Imagens ilustrativas. Resultados variam de pessoa para pessoa.</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script>
+ScrollCraft.mount(document.body);
+
+/* --------------------------------------------------- luz que segue o ponteiro --
+   Nos capítulos vinho, um foco macio acompanha o ponteiro com inércia. */
+(function () {
+  var fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!fine || reduce) return;
+  var grounds = Array.prototype.slice.call(document.querySelectorAll('.ground--wine, .ground--deep, .ground--night'));
+  var px = 0, py = 0, cx = 0, cy = 0, running = false;
+  window.addEventListener('pointermove', function (e) {
+    px = e.clientX; py = e.clientY;
+    if (!running) { running = true; cx = cx || px; cy = cy || py; requestAnimationFrame(tick); }
+  }, { passive: true });
+  function tick() {
+    cx += (px - cx) * 0.07; cy += (py - cy) * 0.07;
+    grounds.forEach(function (g) {
+      var r = g.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > window.innerHeight) return;
+      g.style.setProperty('--lx', (cx - r.left).toFixed(0) + 'px');
+      g.style.setProperty('--ly', (cy - r.top).toFixed(0) + 'px');
+    });
+    if (Math.abs(px - cx) + Math.abs(py - cy) > 0.5) requestAnimationFrame(tick); else running = false;
+  }
+})();
+
+/* ---------------------------------------------------------------- fólio --
+   Atualiza número e título do capítulo e a tinta do fólio conforme o chão. */
+(function () {
+  var num = document.getElementById('folio-num');
+  var title = document.getElementById('folio-title');
+  var current = null;
+  var sections = document.querySelectorAll('[data-chapter]');
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting || e.target === current) return;
+      current = e.target;
+      var parts = e.target.getAttribute('data-chapter').split('|');
+      document.body.setAttribute('data-ground', e.target.getAttribute('data-ground'));
+      title.classList.add('swap');
+      setTimeout(function () {
+        num.textContent = parts[0];
+        title.textContent = parts[1];
+        title.classList.remove('swap');
+      }, 160);
+    });
+  }, { rootMargin: '-50% 0px -50% 0px' });
+  sections.forEach(function (s) { io.observe(s); });
+})();
+
+/* ===========================================================================
+   ASSINATURA: o laser.
+   Duas imagens alinhadas pixel a pixel: a sobrancelha com pigmento e a mesma
+   sobrancelha com o pigmento removido. Cada disparo soma luz a uma máscara
+   acumulada, e a pele limpa aparece só onde a máscara já foi atingida. A
+   limpeza fica, como fica na pele. "Avançar uma sessão" dispara uma passada
+   inteira ao longo do traço, com força parcial, para mostrar que é gradual.
+   =========================================================================== */
+(function () {
+  var stage = document.getElementById('lab');
+  var canvas = document.getElementById('lab-canvas');
+  if (!stage || !canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext('2d');
+  var hint = document.getElementById('lab-hint');
+  var pctEl = document.getElementById('lab-pct');
+  var label = document.getElementById('lab-label');
+  var live = document.getElementById('lab-live');
+  var next = document.getElementById('lab-next');
+  var reset = document.getElementById('lab-reset');
+  var dots = stage.parentNode.querySelectorAll('.dot');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var before = new Image(), after = new Image();
+  before.src = 'assets/laser-src.webp';
+  after.src = 'assets/laser-clean.webp';
+
+  // Traço da sobrancelha, em coordenadas da imagem (0..1).
+  var PATH = [[0.35,0.745],[0.41,0.685],[0.47,0.635],[0.53,0.605],[0.59,0.59],[0.65,0.585],[0.71,0.595],[0.77,0.62],[0.82,0.65],[0.865,0.685]];
+  var FOCUS = { x: 0.62, y: 0.66 };   // ponto focal para o recorte "cover"
+  var SESSIONS = 4;
+
+  var mask = document.createElement('canvas');
+  var mctx = mask.getContext('2d', { willReadFrequently: true });
+  var W = 0, H = 0, dpr = 1, crop = null, session = 0, used = false, raf = 0;
+
+  function layout() {
+    var r = stage.getBoundingClientRect();
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var nw = Math.round(r.width * dpr), nh = Math.round(r.height * dpr);
+    if (nw === W && nh === H) return;
+    // Preserva a máscara ao redimensionar.
+    var keep = null;
+    if (W && H) { keep = document.createElement('canvas'); keep.width = W; keep.height = H; keep.getContext('2d').drawImage(mask, 0, 0); }
+    W = canvas.width = mask.width = nw; H = canvas.height = mask.height = nh;
+    if (keep) mctx.drawImage(keep, 0, 0, W, H);
+    computeCrop();
+    draw();
+  }
+  function computeCrop() {
+    var iw = before.naturalWidth || 1800, ih = before.naturalHeight || 1012;
+    var s = Math.max(W / iw, H / ih);
+    var dw = iw * s, dh = ih * s;
+    var dx = Math.min(0, Math.max(W - dw, W / 2 - FOCUS.x * dw));
+    var dy = Math.min(0, Math.max(H - dh, H / 2 - FOCUS.y * dh));
+    crop = { dx: dx, dy: dy, dw: dw, dh: dh };
+  }
+  function toCanvas(nx, ny) { return [crop.dx + nx * crop.dw, crop.dy + ny * crop.dh]; }
+
+  function draw() {
+    if (!crop || !before.complete || !after.complete) return;
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.clearRect(0, 0, W, H);
+    ctx.drawImage(after, crop.dx, crop.dy, crop.dw, crop.dh);
+    ctx.globalCompositeOperation = 'destination-in';
+    ctx.drawImage(mask, 0, 0);
+    ctx.globalCompositeOperation = 'destination-over';
+    ctx.drawImage(before, crop.dx, crop.dy, crop.dw, crop.dh);
+    ctx.globalCompositeOperation = 'source-over';
+  }
+  function schedule() { if (!raf) raf = requestAnimationFrame(function () { raf = 0; draw(); }); }
+
+  // Um disparo: luz radial somada à máscara. Força 0..1.
+  function shot(x, y, strength, radius) {
+    var r = radius || Math.max(W, H) * 0.06;
+    var g = mctx.createRadialGradient(x, y, 0, x, y, r);
+    g.addColorStop(0, 'rgba(0,0,0,' + strength + ')');
+    g.addColorStop(0.55, 'rgba(0,0,0,' + (strength * 0.6) + ')');
+    g.addColorStop(1, 'rgba(0,0,0,0)');
+    mctx.fillStyle = g;
+    mctx.beginPath(); mctx.arc(x, y, r, 0, Math.PI * 2); mctx.fill();
+    schedule();
+  }
+  function ring(cx, cy) {
+    if (reduce) return;
+    var el = document.createElement('span');
+    el.className = 'pulse';
+    el.style.left = (cx / dpr) + 'px'; el.style.top = (cy / dpr) + 'px';
+    stage.appendChild(el);
+    setTimeout(function () { el.remove(); }, 700);
+  }
+
+  // Quanto do traço já está limpo: amostra a máscara ao longo do caminho.
+  function coverage() {
+    if (!W) return 0;
+    var total = 0, n = 0;
+    for (var i = 0; i < PATH.length - 1; i++) {
+      for (var t = 0; t < 1; t += 0.2) {
+        var nx = PATH[i][0] + (PATH[i + 1][0] - PATH[i][0]) * t;
+        var ny = PATH[i][1] + (PATH[i + 1][1] - PATH[i][1]) * t;
+        var p = toCanvas(nx, ny);
+        var px = Math.max(0, Math.min(W - 1, Math.round(p[0]))), py = Math.max(0, Math.min(H - 1, Math.round(p[1])));
+        total += mctx.getImageData(px, py, 1, 1).data[3] / 255; n++;
+      }
+    }
+    return n ? total / n : 0;
+  }
+  var lastPct = -1;
+  function report() {
+    var pct = Math.round(Math.min(1, coverage() / 0.92) * 100);
+    if (pct === lastPct) return;
+    lastPct = pct;
+    pctEl.textContent = pct + '%';
+  }
+  function firstUse() { if (!used) { used = true; hint.classList.add('gone'); } }
+
+  // Ponteiro: tocar dispara, arrastar com o botão pressionado dispara em sequência.
+  var down = false, lastX = 0, lastY = 0;
+  function local(e) { var r = stage.getBoundingClientRect(); return [(e.clientX - r.left) * dpr, (e.clientY - r.top) * dpr]; }
+  stage.addEventListener('pointerdown', function (e) {
+    if (e.button && e.button !== 0) return;
+    down = true; firstUse();
+    var p = local(e); lastX = p[0]; lastY = p[1];
+    shot(p[0], p[1], 0.62); ring(p[0], p[1]); report();
+    if (e.pointerType === 'mouse') stage.setPointerCapture && stage.setPointerCapture(e.pointerId);
+  });
+  stage.addEventListener('pointermove', function (e) {
+    if (!down) return;
+    var p = local(e);
+    var d = Math.hypot(p[0] - lastX, p[1] - lastY);
+    if (d < Math.max(W, H) * 0.035) return;
+    lastX = p[0]; lastY = p[1];
+    shot(p[0], p[1], 0.5); ring(p[0], p[1]); report();
+  });
+  ['pointerup', 'pointercancel', 'pointerleave'].forEach(function (t) { stage.addEventListener(t, function () { down = false; }); });
+
+  function setSession(n) {
+    session = n;
+    label.textContent = 'Sessão ' + n + ' de ' + SESSIONS;
+    dots.forEach(function (d, i) { d.classList.toggle('on', i < n); });
+    next.disabled = n >= SESSIONS;
+  }
+  // Uma sessão: uma passada ao longo do traço, força parcial, pulsos em cadência.
+  next.addEventListener('click', function () {
+    if (session >= SESSIONS) return;
+    firstUse();
+    setSession(session + 1);
+    var strength = [0.1, 0.13, 0.18, 0.8][session - 1];
+    var done = session;
+    var pts = [];
+    for (var i = 0; i < PATH.length - 1; i++) for (var t = 0; t < 1; t += 0.34) {
+      pts.push([PATH[i][0] + (PATH[i + 1][0] - PATH[i][0]) * t + (Math.random() - 0.5) * 0.012,
+                PATH[i][1] + (PATH[i + 1][1] - PATH[i][1]) * t + (Math.random() - 0.5) * 0.03]);
+    }
+    pts.push(PATH[PATH.length - 1]);
+    var k = 0;
+    (function step() {
+      if (k >= pts.length) {
+        report();
+        live.textContent = done >= SESSIONS
+          ? 'Pigmento removido. É assim que a pele volta ao tom dela: aos poucos, sessão a sessão.'
+          : 'Sessão ' + done + ' de ' + SESSIONS + ' concluída. A pele descansa algumas semanas até a próxima.';
+        return;
+      }
+      var p = toCanvas(pts[k][0], pts[k][1]);
+      shot(p[0], p[1], strength, Math.max(W, H) * 0.075);
+      if (k % 2 === 0) ring(p[0], p[1]);
+      k++;
+      if (reduce) step(); else setTimeout(step, 34);
+    })();
+  });
+  reset.addEventListener('click', function () {
+    mctx.clearRect(0, 0, W, H); lastPct = -1; setSession(0); report(); schedule();
+    live.textContent = 'Simulação reiniciada. Toque na sobrancelha ou avance uma sessão.';
+  });
+
+  var ready = 0;
+  function onload() { if (++ready === 2) { computeCrop(); layout(); draw(); } }
+  if (before.complete) onload(); else before.addEventListener('load', onload);
+  if (after.complete) onload(); else after.addEventListener('load', onload);
+  if ('ResizeObserver' in window) new ResizeObserver(layout).observe(stage); else window.addEventListener('resize', layout);
+  setSession(0);
+})();
+</script>
+</body>
+</html>

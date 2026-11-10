@@ -1,0 +1,1701 @@
+{
+  "doc": {
+    "height": 12431,
+    "vh": 844,
+    "acts": [
+      "scrub",
+      "pin",
+      "pin",
+      "flow",
+      "pan",
+      "pin"
+    ],
+    "world": null
+  },
+  "report": [
+    {
+      "i": 0,
+      "y": 0,
+      "pct": 0,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pig",
+          "dir": "light-on-dark",
+          "worst": 7.05,
+          "mean": 11.56
+        }
+      ],
+      "cues": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pigmento ",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 0,
+          "dur": 5,
+          "vis": 0.919
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "scrub",
+      "stages": [
+        69,
+        2263,
+        4457,
+        8042,
+        11081
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#0A0D22"
+    },
+    {
+      "i": 1,
+      "y": 96,
+      "pct": 1,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pig",
+          "dir": "light-on-dark",
+          "worst": 7.05,
+          "mean": 11.56
+        }
+      ],
+      "cues": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pigmento ",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 0.31,
+          "dur": 5,
+          "vis": 1
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "scrub",
+      "stages": [
+        0,
+        2167,
+        4361,
+        7946,
+        10985
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 2,
+      "y": 355,
+      "pct": 3,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pig",
+          "dir": "light-on-dark",
+          "worst": 7.05,
+          "mean": 11.56
+        }
+      ],
+      "cues": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pigmento ",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 1.07,
+          "dur": 5,
+          "vis": 1
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "scrub",
+      "stages": [
+        0,
+        1908,
+        4102,
+        7687,
+        10726
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 3,
+      "y": 614,
+      "pct": 5,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pig",
+          "dir": "light-on-dark",
+          "worst": 7.05,
+          "mean": 11.56
+        }
+      ],
+      "cues": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pigmento ",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 1.64,
+          "dur": 5,
+          "vis": 1
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "scrub",
+      "stages": [
+        0,
+        1649,
+        3843,
+        7428,
+        10467
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 4,
+      "y": 873,
+      "pct": 8,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pig",
+          "dir": "light-on-dark",
+          "worst": 7.05,
+          "mean": 11.55
+        }
+      ],
+      "cues": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pigmento ",
+          "o": 0.98
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 2.09,
+          "dur": 5,
+          "vis": 1
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "scrub",
+      "stages": [
+        0,
+        1390,
+        3584,
+        7169,
+        10208
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 5,
+      "y": 1132,
+      "pct": 10,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Sua sobrancelha não precisa carregar pigmento ",
+          "o": 0.15
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 2.48,
+          "dur": 5,
+          "vis": 1
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "scrub",
+      "stages": [
+        0,
+        1131,
+        3325,
+        6910,
+        9949
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 6,
+      "y": 1392,
+      "pct": 12,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 2.87,
+          "dur": 5,
+          "vis": 1
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "scrub",
+      "stages": [
+        0,
+        871,
+        3065,
+        6650,
+        9689
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 7,
+      "y": 1503,
+      "pct": 13,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 3.05,
+          "dur": 5,
+          "vis": 0.9
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "scrub",
+      "stages": [
+        -84,
+        760,
+        2954,
+        6539,
+        9578
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 8,
+      "y": 1630,
+      "pct": 14,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 3.27,
+          "dur": 5,
+          "vis": 0.75
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "scrub",
+      "stages": [
+        -211,
+        633,
+        2827,
+        6412,
+        9451
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 9,
+      "y": 1756,
+      "pct": 15,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 3.53,
+          "dur": 5,
+          "vis": 0.601
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "scrub",
+      "stages": [
+        -337,
+        507,
+        2701,
+        6286,
+        9325
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 10,
+      "y": 2290,
+      "pct": 20,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -871,
+        0,
+        2167,
+        5752,
+        8791
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 11,
+      "y": 2549,
+      "pct": 22,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Maquiagem todos os dias para disfarçar.",
+          "o": 0.52
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -1130,
+        0,
+        1908,
+        5493,
+        8532
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(15,20,43)"
+    },
+    {
+      "i": 12,
+      "y": 2808,
+      "pct": 24,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Maquiagem todos os dias para disfarçar.",
+          "dir": "own-fill",
+          "worst": 18.99,
+          "mean": 18.99
+        }
+      ],
+      "cues": [
+        {
+          "t": "Maquiagem todos os dias para disfarçar.",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -1389,
+        0,
+        1649,
+        5234,
+        8273
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(18,24,48)"
+    },
+    {
+      "i": 13,
+      "y": 3068,
+      "pct": 26,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "O espelho que lembra o que você quer apa",
+          "dir": "own-fill",
+          "worst": 18.99,
+          "mean": 18.99
+        }
+      ],
+      "cues": [
+        {
+          "t": "O espelho que lembra o que você quer apagar.",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -1649,
+        0,
+        1389,
+        4974,
+        8013
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(18,24,48)"
+    },
+    {
+      "i": 14,
+      "y": 3327,
+      "pct": 29,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "O espelho que lembra o que você quer apagar.",
+          "o": 0.23
+        },
+        {
+          "t": "O medo de que tentar corrigir só piore.",
+          "o": 0.07
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -1908,
+        0,
+        1130,
+        4715,
+        7754
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(18,24,48)"
+    },
+    {
+      "i": 15,
+      "y": 3586,
+      "pct": 31,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "O medo de que tentar corrigir só piore.",
+          "dir": "own-fill",
+          "worst": 18.99,
+          "mean": 18.99
+        }
+      ],
+      "cues": [
+        {
+          "t": "O medo de que tentar corrigir só piore.",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -2167,
+        0,
+        871,
+        4456,
+        7495
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(18,24,48)"
+    },
+    {
+      "i": 16,
+      "y": 4498,
+      "pct": 39,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "A remoção existe. E fica natural.",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "A remoção existe. E fica natural.",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -3079,
+        -885,
+        0,
+        3544,
+        6583
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(18,24,48)"
+    },
+    {
+      "i": 17,
+      "y": 4887,
+      "pct": 42,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "A remoção existe. E fica natural.",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "A remoção existe. E fica natural.",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -3468,
+        -1274,
+        0,
+        3155,
+        6194
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(13,17,39)"
+    },
+    {
+      "i": 18,
+      "y": 5276,
+      "pct": 46,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "A remoção existe. E fica natural.",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "A remoção existe. E fica natural.",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -3857,
+        -1663,
+        0,
+        2766,
+        5805
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 19,
+      "y": 5665,
+      "pct": 49,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "A remoção existe. E fica natural.",
+          "o": 0.84
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -4246,
+        -2052,
+        0,
+        2377,
+        5416
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 20,
+      "y": 6054,
+      "pct": 52,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -4635,
+        -2441,
+        0,
+        1988,
+        5027
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 21,
+      "y": 6443,
+      "pct": 56,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -5024,
+        -2830,
+        0,
+        1599,
+        4638
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 22,
+      "y": 6514,
+      "pct": 56,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -5095,
+        -2901,
+        -31,
+        1528,
+        4567
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 23,
+      "y": 6814,
+      "pct": 59,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -5395,
+        -3201,
+        -331,
+        1228,
+        4267
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(11,12,22)"
+    },
+    {
+      "i": 24,
+      "y": 7113,
+      "pct": 61,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "flow",
+      "stages": [
+        -5694,
+        -3500,
+        -630,
+        929,
+        3968
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(11,12,15)"
+    },
+    {
+      "i": 25,
+      "y": 7413,
+      "pct": 64,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "flow",
+      "stages": [
+        -5994,
+        -3800,
+        -930,
+        629,
+        3668
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(11,12,15)"
+    },
+    {
+      "i": 26,
+      "y": 7712,
+      "pct": 67,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pan",
+      "stages": [
+        -6293,
+        -4099,
+        -1229,
+        330,
+        3369
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(11,12,15)"
+    },
+    {
+      "i": 27,
+      "y": 8012,
+      "pct": 69,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        0
+      ],
+      "wipes": [],
+      "act": "pan",
+      "stages": [
+        -6593,
+        -4399,
+        -1529,
+        30,
+        3069
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(11,12,15)"
+    },
+    {
+      "i": 28,
+      "y": 8086,
+      "pct": 70,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -22
+      ],
+      "wipes": [],
+      "act": "pan",
+      "stages": [
+        -6667,
+        -4473,
+        -1603,
+        0,
+        2995
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(11,12,15)"
+    },
+    {
+      "i": 29,
+      "y": 8508,
+      "pct": 73,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -230
+      ],
+      "wipes": [],
+      "act": "pan",
+      "stages": [
+        -7089,
+        -4895,
+        -2025,
+        0,
+        2573
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,11,14)"
+    },
+    {
+      "i": 30,
+      "y": 8929,
+      "pct": 77,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -439
+      ],
+      "wipes": [],
+      "act": "pan",
+      "stages": [
+        -7510,
+        -5316,
+        -2446,
+        0,
+        2152
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,11,13)"
+    },
+    {
+      "i": 31,
+      "y": 9350,
+      "pct": 81,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -647
+      ],
+      "wipes": [],
+      "act": "pan",
+      "stages": [
+        -7931,
+        -5737,
+        -2867,
+        0,
+        1731
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,11,13)"
+    },
+    {
+      "i": 32,
+      "y": 9771,
+      "pct": 84,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -855
+      ],
+      "wipes": [],
+      "act": "pan",
+      "stages": [
+        -8352,
+        -6158,
+        -3288,
+        0,
+        1310
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,11,13)"
+    },
+    {
+      "i": 33,
+      "y": 10193,
+      "pct": 88,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -1064
+      ],
+      "wipes": [],
+      "act": "pan",
+      "stages": [
+        -8774,
+        -6580,
+        -3710,
+        0,
+        888
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,11,13)"
+    },
+    {
+      "i": 34,
+      "y": 11091,
+      "pct": 96,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -1085
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -9672,
+        -7478,
+        -4608,
+        -854,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,11,13)"
+    },
+    {
+      "i": 35,
+      "y": 11188,
+      "pct": 97,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "dir": "own-fill",
+          "worst": 5.36,
+          "mean": 5.36
+        }
+      ],
+      "cues": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "o": 1
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "o": 0.93
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -1085
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -9769,
+        -7575,
+        -4705,
+        -951,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,12,27)"
+    },
+    {
+      "i": 36,
+      "y": 11285,
+      "pct": 97,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "dir": "own-fill",
+          "worst": 5.36,
+          "mean": 5.36
+        }
+      ],
+      "cues": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "o": 1
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -1085
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -9866,
+        -7672,
+        -4802,
+        -1048,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 37,
+      "y": 11382,
+      "pct": 98,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "dir": "own-fill",
+          "worst": 5.36,
+          "mean": 5.36
+        }
+      ],
+      "cues": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "o": 1
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -1085
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -9963,
+        -7769,
+        -4899,
+        -1145,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 38,
+      "y": 11480,
+      "pct": 99,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "dir": "own-fill",
+          "worst": 5.36,
+          "mean": 5.36
+        }
+      ],
+      "cues": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "o": 1
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -1085
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -10061,
+        -7867,
+        -4997,
+        -1243,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 39,
+      "y": 11577,
+      "pct": 100,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "dir": "own-fill",
+          "worst": 5.36,
+          "mean": 5.36
+        }
+      ],
+      "cues": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "o": 1
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -1085
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -10158,
+        -7964,
+        -5094,
+        -1340,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    },
+    {
+      "i": 40,
+      "y": 11587,
+      "pct": 100,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "dir": "own-fill",
+          "worst": 5.36,
+          "mean": 5.36
+        }
+      ],
+      "cues": [
+        {
+          "t": "Pronto para ver a pele sem pigmento?",
+          "o": 1
+        },
+        {
+          "t": "Fale pelo WhatsApp",
+          "o": 1
+        }
+      ],
+      "clips": [
+        {
+          "painted": true,
+          "t": 4.99,
+          "dur": 5,
+          "vis": 0
+        }
+      ],
+      "rails": [
+        -1085
+      ],
+      "wipes": [],
+      "act": "pin",
+      "stages": [
+        -10168,
+        -7974,
+        -5104,
+        -1350,
+        0
+      ],
+      "segs": [],
+      "custom": [],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "rgb(10,13,34)"
+    }
+  ],
+  "consoleErrors": [],
+  "failed": []
+}

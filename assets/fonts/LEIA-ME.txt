@@ -1,0 +1,2 @@
+Coloque aqui o arquivo licenciado da Vicenza como Vicenza.woff2 (ou Vicenza.otf).
+Sem o arquivo, a página usa a Instrument Serif (Google Fonts) no lugar.

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Renata Dareh · Remoção de Micropigmentação, São Paulo</title>
+<meta name="description" content="Remoção de micropigmentação de sobrancelhas, olhos e lábios com a Dra. Renata Dareh em São Paulo. Consulta no Consolação. Fale pelo WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230A0D22'/></svg>">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+  /* Rebrand: seis cores e duas faces. Tudo o resto em scrollcraft.css deriva destes tokens. */
+  :root {
+    --sc-canvas:     #0A0D22;
+    --sc-surface:    #121830;
+    --sc-ink:        #F0F4F8;
+    --sc-ink-soft:   #9AA5B8;
+    --sc-accent:     #0E7490;
+    --sc-accent-ink: #FFFFFF;
+    --sc-font-display: "Archivo", system-ui, sans-serif;
+    --sc-font-text:    "Geist", system-ui, sans-serif;
+  }
+
+  /* Própria marca desta página. Não retoque .sc-stage, .sc-copy nem qualquer
+     seletor [data-sc-*]: são o mecanismo. */
+  .site-bar {
+    position: sticky; top: 0; z-index: var(--sc-z-chrome);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: var(--sc-4) var(--sc-gutter);
+    background: var(--sc-canvas);
+    border-bottom: 1px solid var(--sc-hairline);
+  }
+  .site-bar .mark {
+    font-family: var(--sc-font-display);
+    font-weight: 600;
+    font-size: var(--sc-t-lg);
+    letter-spacing: var(--sc-track-tight);
+    color: var(--sc-ink);
+    text-decoration: none;
+  }
+  .site-bar .cta {
+    font-size: var(--sc-t-xs);
+    letter-spacing: var(--sc-track-wide);
+    text-transform: uppercase;
+    color: var(--sc-accent-ink);
+    background: var(--sc-accent);
+    border: 0;
+    border-radius: var(--sc-r-pill);
+    padding: var(--sc-2) var(--sc-5);
+    text-decoration: none;
+    transition: transform 140ms var(--sc-ease-out), opacity 140ms var(--sc-ease-out);
+  }
+  .site-bar .cta:hover { transform: translateY(-1px); opacity: 0.95; }
+  .site-bar .cta:active { transform: scale(0.97); }
+  .sc-stage--ground { background: var(--sc-surface); }
+
+  /* Scrim mais forte para o herói: escurece o bottom onde o texto fica. */
+  .sc-scrim--hero {
+    background: linear-gradient(to top,
+      color-mix(in oklab, var(--sc-canvas) 100%, transparent) 0%,
+      color-mix(in oklab, var(--sc-canvas) 80%, transparent) 35%,
+      color-mix(in oklab, var(--sc-canvas) 40%, transparent) 60%,
+      transparent 75%);
+  }
+  /* Fundo escuro atrás de cada linha de texto da tensão, só onde o texto está. */
+  .sc-lede--panel {
+    background: color-mix(in oklab, var(--sc-surface) 92%, transparent);
+    padding: var(--sc-3) var(--sc-5);
+    border-radius: var(--sc-r-md);
+    display: inline-block;
+  }
+  .drag-hint {
+    position: absolute; inset: 0; z-index: 40; pointer-events: none;
+    display: grid; place-items: center;
+    color: var(--sc-ink); font-family: var(--sc-font-display);
+    font-size: var(--sc-t-xl); letter-spacing: var(--sc-track-tight);
+    text-align: center; mix-blend-mode: difference;
+    opacity: 0; transition: opacity 300ms var(--sc-ease-out);
+  }
+  .drag-hint.visible { opacity: 1; }
+  .drag-hint kbd {
+    display: inline-flex; align-items: center; gap: var(--sc-2);
+    background: rgba(255,255,255,0.12); border: 1px solid color-mix(in oklab, var(--sc-ink) 25%, transparent);
+    border-radius: var(--sc-r-md); padding: var(--sc-2) var(--sc-4);
+    font-family: var(--sc-font-display); font-size: var(--sc-t-sm); color: var(--sc-ink);
+    text-transform: none;
+  }
+  .drag-hint kbd::before { content: "\2190\2192"; font-size: var(--sc-t-xs); opacity: 0.7; }
+
+  .reveal-block { position: relative; overflow: hidden; border-radius: var(--sc-r-lg); border: 1px solid var(--sc-hairline-strong); }
+  .reveal-block img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .reveal-mask {
+    position: absolute; inset: 0; width: 50%; height: 100%;
+    background: #000; mask-image: linear-gradient(90deg, transparent 0%, black 60%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 60%);
+    pointer-events: none;
+  }
+  .reveal-mask.dragging { cursor: ew-resize; }
+
+  /* Serviços: cards do rail com tilt */
+  .service-card {
+    position: relative; width: 320px; height: 360px; flex: 0 0 auto;
+    border-radius: var(--sc-r-lg); border: 1px solid var(--sc-hairline-strong);
+    background: var(--sc-surface); overflow: hidden;
+  }
+  .service-card .sc-face {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; opacity: 0.95;
+  }
+  .service-card .sc-cap {
+    position: absolute; inset: 0 0 auto 0; padding: var(--sc-5);
+    background: linear-gradient(to top, color-mix(in oklab, var(--sc-surface) 96%, transparent) 0%, transparent 55%);
+    display: grid; place-items: end;
+  }
+  .service-card h3 { font-family: var(--sc-font-display); font-size: var(--sc-t-xl); letter-spacing: var(--sc-track-tight); margin: 0 0 var(--sc-1) 0; color: var(--sc-ink); }
+  .service-card p { font-size: var(--sc-t-xs); color: var(--sc-ink-soft); margin: 0; line-height: 1.5; }
+
+  /* WhatsApp CTA do fechamento */
+  .wa-block {
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; padding: var(--sc-10) var(--sc-gutter);
+    border-top: 1px solid var(--sc-hairline-strong);
+    background: color-mix(in oklab, var(--sc-surface) 80%, transparent);
+  }
+  .wa-badge {
+    display: inline-flex; align-items: center; gap: var(--sc-3);
+    background: var(--sc-accent); color: var(--sc-accent-ink); border-radius: var(--sc-r-pill);
+    padding: var(--sc-4) var(--sc-8); font-family: var(--sc-font-display);
+    font-weight: 600; font-size: var(--sc-t-lg); text-decoration: none;
+    transition: transform 140ms var(--sc-ease-out), box-shadow 140ms var(--sc-ease-out);
+    box-shadow: var(--sc-e2);
+    border: 2px solid transparent;
+  }
+  .wa-badge:hover { transform: translateY(-2px); box-shadow: var(--sc-e3); }
+  .wa-badge:active { transform: scale(0.97); }
+  .wa-badge svg { width: 28px; height: 28px; fill: #FFFFFF; }
+  .wa-note { margin-top: var(--sc-4); color: var(--sc-ink-soft); font-size: var(--sc-t-sm); max-width: 42ch; line-height: 1.6; }
+
+  .sc-section { border-top: 1px solid var(--sc-hairline); }
+  .sc-rule { height: 1px; border: 0; background: var(--sc-hairline); margin: 0; }
+</style>
+</head>
+<body>
+
+<span data-sc-progress></span>
+<div class="sc-grain" aria-hidden="true"></div>
+
+<header class="site-bar">
+  <a class="mark" href="#top">Renata Dareh</a>
+  <a class="cta" href="#fale">Fale pelo WhatsApp</a>
+</header>
+
+<main id="top">
+
+  <!-- 1 · RECONHECIMENTO: scrub (herói) -->
+  <section data-sc-act="scrub" data-sc-span="2.6" data-sc-dwell="0.34" data-sc-drift="#0A0D22">
+    <div data-sc-stage>
+      <img class="sc-stage__poster" src="assets/01-hero.png" alt="">
+      <video data-sc-scrub data-sc-src="assets/01.mp4"
+             data-sc-src-mobile="assets/01-m.mp4" muted playsinline></video>
+      <div class="sc-scrim sc-scrim--band sc-scrim--hero" aria-hidden="true"></div>
+      <div class="sc-copy sc-copy--lead" data-sc-cue="0 0.78 0">
+        <h1 class="sc-display sc-display--xl" data-sc-kinetic="lines">
+          Sua sobrancelha não precisa carregar pigmento para sempre.
+        </h1>
+        <p class="sc-body">Remoção de micropigmentação com a Dra. Renata Dareh, no Consolação, São Paulo. Pele limpa, com naturalidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · TENSÃO: pin + kinetic -->
+  <section data-sc-act="pin" data-sc-span="2.6" data-sc-drift="#121830">
+    <div data-sc-stage class="argument sc-stage--ground">
+      <p class="sc-lede sc-lede--panel" data-sc-cue="0.15 0.55">Maquiagem todos os dias para disfarçar.</p>
+      <p class="sc-lede sc-lede--panel" data-sc-cue="0.48 0.82">O espelho que lembra o que você quer apagar.</p>
+      <p class="sc-lede sc-lede--panel" data-sc-cue="0.76">O medo de que tentar corrigir só piore.</p>
+    </div>
+  </section>
+
+  <!-- 3 · TURN: reveal + parallax + signature move (arrastar antes/depois) -->
+  <section data-sc-act="pin" data-sc-span="3.4" data-sc-dwell="0.40" data-sc-drift="#0A0D22">
+    <div data-sc-stage class="sc-stage--ground">
+      <div class="sc-scrim sc-scrim--vignette" aria-hidden="true"></div>
+      <div class="sc-copy sc-copy--center" data-sc-cue="0 0.72 0">
+        <h2 class="sc-display sc-display--lg" data-sc-kinetic="lines">
+          A remoção existe. E fica natural.
+        </h2>
+      </div>
+      <div class="reveal-block" style="width: 64vw; height: 42vh; max-height: 520px; margin: 0 auto;">
+        <img src="assets/turn-pigment.png" alt="Antes: sobrancelha com micropigmentação desbotada" class="sc-face">
+        <img src="assets/turn-clean.png" alt="Depois: sobrancelha limpa, sem pigmento" class="sc-face" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+        <div class="reveal-mask" id="reveal-mask"></div>
+        <div class="drag-hint" id="drag-hint">
+          <kbd>arraste para revelar o depois</kbd>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · SUBSTÂNCIA: flow -->
+  <section class="sc-section" data-sc-act="flow" data-sc-drift="#0B0C0F">
+    <div class="sc-wrap sc-stack" data-sc-in data-sc-stagger="70">
+      <h2 class="sc-display sc-display--md">Como a remoção funciona</h2>
+      <p class="sc-body">O pigmento é quebrado em partículas microscópicas que o próprio corpo elimina, sessão a sessão. Nada é coberto com nova tinta: a pele volta ao seu tom original, sem desenho por cima.</p>
+      <p class="sc-body">Cada área reage de um jeito. Sobrancelha, contorno dos olhos e lábios têm protocolos diferentes, e a Dra. Renata ajusta a intensidade de cada sessão à resposta da sua pele.</p>
+      <hr class="sc-rule" style="margin-block: var(--sc-7);">
+      <h3 class="sc-display sc-display--sm" style="font-size: var(--sc-t-lg);">O que muda de verdade</h3>
+      <p class="sc-body">Não é clareamento. É remoção. O resultado aparece progressivamente, e o acompanhamento é feito consulta a consulta, com honestidade sobre o que cada pele pode entregar.</p>
+    </div>
+  </section>
+
+  <!-- 5 · RANGE: pan -->
+  <section data-sc-act="pan" data-sc-span="3.6" data-sc-drift="#0A0B0D">
+    <div data-sc-stage>
+      <div class="rail" data-sc-pan="0.06">
+        <div class="rail__lead sc-stack">
+          <h2 class="sc-display sc-display--md">Onde a remoção pode atuar</h2>
+          <p class="sc-body">Cada área tem seu próprio protocolo. Escolha a sua.</p>
+        </div>
+        <article class="service-card" data-sc-tilt="6">
+          <img src="assets/service-1.svg" alt="" class="sc-face">
+          <div class="sc-cap">
+            <h3>Sobrancelhas</h3>
+            <p>[foto real: sobrancelha regenerada]</p>
+          </div>
+        </article>
+        <article class="service-card" data-sc-tilt="6">
+          <img src="assets/service-2.svg" alt="" class="sc-face">
+          <div class="sc-cap">
+            <h3>Contorno dos olhos</h3>
+            <p>[foto real: pálpebra sem delineador permanente]</p>
+          </div>
+        </article>
+        <article class="service-card" data-sc-tilt="6">
+          <img src="assets/service-3.svg" alt="" class="sc-face">
+          <div class="sc-cap">
+            <h3>Lábios</h3>
+            <p>[foto real: lábios sem pigmento]</p>
+          </div>
+        </article>
+        <article class="service-card" data-sc-tilt="6">
+          <img src="assets/service-4.svg" alt="" class="sc-face">
+          <div class="sc-cap">
+            <h3>Outras áreas</h3>
+            <p>[foto real: outra região tratada]</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · COMPROMISSO: pin + pointer (fechamento, último elemento da página) -->
+  <section id="fale" data-sc-act="pin" data-sc-span="1.6" data-sc-drift="#0A0D22">
+    <div data-sc-stage class="close sc-stage--ground" data-sc-spotlight>
+      <div class="sc-scrim sc-scrim--band" aria-hidden="true"></div>
+      <div class="wa-block">
+        <h2 class="sc-display sc-display--lg" data-sc-cue="0.06" data-sc-kinetic="lines">
+          Pronto para ver a pele sem pigmento?
+        </h2>
+        <a class="wa-badge" href="https://wa.me/5511930397521?text=Oi,%20Renata%20Dareh.%20Gostaria%20de%20saber%20mais%20sobre%20remo%C3%A7%C3%A3o%20de%20micropigmenta%C3%A7%C3%A3o." target="_blank" rel="noopener" data-sc-magnet="0.26" data-sc-cue="0.06" data-sc-rise="0">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3.313a9.88 9.88 0 00-4.7 1.256 9.87 9.87 0 00-4.687-1.256C7.302 3.313 1 8.715 1 15.016c0 1.407.313 2.763.873 4.006-.016.03-.03.063-.047.094-.298 1.298.594 2.671 2.124 3.937.297.235.672.359 1.031.359q.468 0 .938-.094c1.124.672 2.499 1.03 4.03 1.03 4.265 0 8-3.53 8-8 0-3.42-1.874-6.373-4.686-7.997zm1.25 11.75a5.8 5.8 0 01-1.687 4.312c-.328.312-.703.547-1.125.718-.313.125-.656.188-1 .188-.391 0-.78-.156-1.093-.438l-.53-.453c-.844-.718-1.218-1.593-1.312-2.593s.062-1.937.391-2.843c.359-.968.844-1.875 1.406-2.625.562-.75 1.187-1.406 1.875-1.968.688-.562 1.437-1.031 2.25-1.406.813-.375 1.625-.625 2.438-.75q.75-.125 1.5-.125c.406 0 .78.062 1.125.156.468.125.875.312 1.25.562a4.6 4.6 0 011.718 1.093c.438.438.781.938 1.031 1.5s.375 1.156.375 1.812c0 .688-.156 1.312-.468 1.875a5.9 5.9 0 01-1.343 1.937c-.468.531-1.03.938-1.656 1.281-.624.344-1.312.594-2.031.78-.718.187-1.468.25-2.218.25-.687 0-1.344-.062-2-.187a6 6 0 01-1.125-.125c-.375 0-.718.094-1.062.188a5 5 0 01-1.125.281c-.562.25-1.062.531-1.5.875-.438.344-.844.75-1.187 1.187-.312.406-.531.844-.594 1.281-.062.406-.031.78.031 1.094.156.344.344.656.594.906z" fill="#FFFFFF"/></svg>
+          Fale pelo WhatsApp
+        </a>
+        <p class="wa-note">(11) 93039-7521 · R. Frei Caneca, 1212 - Conj 87 - Consolação, São Paulo - SP · Abre quarta-feira às 09:00</p>
+      </div>
+      <footer class="foot">
+        <p style="font-size: var(--sc-t-xs); color: var(--sc-ink-soft); letter-spacing: var(--sc-track-wide); text-transform: uppercase;">Dra. Renata Dareh · Especialista em remoção de pigmento · 5,0 (11 avaliações)</p>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script>
+ScrollCraft.mount(document.body);
+
+/* ========================================================================
+   Signature move: arrastar para revelar o depois (Turn).
+   JS próprio da página, não parâmetro do kit. O motor continua intocado.
+   ======================================================================== */
+(function () {
+  var block = document.querySelector('.reveal-block');
+  var mask = document.querySelector('.reveal-mask');
+  var hint = document.getElementById('drag-hint');
+  var imgAfter = block.querySelector('.sc-face:nth-of-type(2)');
+  if (!block || !mask) return;
+
+  var w = block.offsetWidth;
+  var x = w * 0.5;          // começa no meio
+  var target = x;
+  var dragging = false;
+
+  function render() {
+    var pct = Math.round((x / w) * 100);
+    mask.style.maskImage = 'linear-gradient(90deg, transparent 0%, black ' + pct + '%)';
+    mask.style.webkitMaskImage = 'linear-gradient(90deg, transparent 0%, black ' + pct + '%)';
+    mask.style.width = pct + '%';
+    // Passa o progresso como CSS custom property para a página ler também.
+    block.style.setProperty('--sc-p-drag', (x / w).toFixed(4));
+  }
+  render();
+
+  function start(e) {
+    dragging = true;
+    block.classList.add('dragging');
+    hint.classList.remove('visible');
+    move(e);
+  }
+  function move(e) {
+    if (!dragging) return;
+    var rect = block.getBoundingClientRect();
+    var clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    var nx = clientX - rect.left;
+    target = Math.min(Math.max(nx, 0), w);
+  }
+  function end() {
+    dragging = false;
+    block.classList.remove('dragging');
+  }
+
+  // Animação do rastreador: interpola para o alvo, não rastreia direto (momentum).
+  (function tick() {
+    x += (target - x) * 0.12;
+    if (Math.abs(target - x) > 0.5) render();
+    requestAnimationFrame(tick);
+  })();
+
+  block.addEventListener('mousedown', start, { passive: true });
+  block.addEventListener('touchstart', start, { passive: true });
+  window.addEventListener('mousemove', move, { passive: true });
+  window.addEventListener('touchmove', move, { passive: true });
+  window.addEventListener('mouseup', end, { passive: true });
+  window.addEventListener('touchend', end, { passive: true });
+
+  // Dica de arrastar some após o primeiro uso ou um tempo.
+  setTimeout(function () { hint.classList.remove('visible'); }, 4000);
+})();
+</script>
+</body>
+</html>
